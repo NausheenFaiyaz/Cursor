@@ -407,7 +407,7 @@ main > .section:first-child {
   padding: 14.2188px;
 }
 .agent-display-container .agent-container,
-.ecosystem-display-container .ecosystem-container  {
+.ecosystem-display-container .ecosystem-container {
   display: grid;
   cursor: default;
   grid-column-start: 9;
@@ -440,6 +440,7 @@ main > .section:first-child {
 .ecosystem-img img {
   width: 100%;
   border-radius: 4px;
+  user-select: none;
 }
 
 .feature-block:nth-child(2)
@@ -455,4 +456,129 @@ main > .section:first-child {
   align-items: center;
   padding-left: 24.375px;
   padding-right: 2.03125px;
+}
+.testimonial-container {
+  max-width: 1300px;
+  width: 100%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+.testimonial-container .testimonial-heading {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-bottom: 45.5px;
+  max-width: 80ch;
+  text-align: center;
+}
+
+.testimonial-container .testimonial-heading h2 {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 2.25rem;
+  text-wrap-mode: initial;
+  text-wrap-style: balance;
+}
+
+.testimonial-grid-container {
+  display: grid;
+  align-items: stretch;
+  gap: 8.125px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testimonial-grid-container div .card {
+  position: relative;
+  border-radius: 4px;
+  background-color: #1b1913;
+  padding-bottom: 14.2188px;
+  padding-top: 12.9187px;
+  padding-inline: 14.2188px;
+  display: flex;
+  height: 100%;
+  min-height: 180px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.testimonial-grid-container div .card figure {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.testimonial-grid-container div .card figure blockquote {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.card figure blockquote p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.card figure .testimonial-bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 36.4px;
+}
+
+.testimonial-bottom div {
+  height: 2.5rem;
+  width: 2.5rem;
+  flex-shrink: 0;
+  z-index: 1;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  margin-inline-end: 10.4px;
+}
+
+.testimonial-bottom div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: transparent;
+}
+
+.testimonial-bottom figcaption div {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  width: fit-content;
+}
+
+figcaption div span {
+  display: block;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: #edecec99;
+}
+
+.use-cases-section {
+  margin-block: 36.4px;
+  width: 100%;
+  max-width: 1300px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+.use-cases-section .text-left {
+  text-align: left;
+  max-width: 48ch;
+  margin-bottom: 18.2px;
+}
+.use-cases-section .text-left h2 {
+  text-wrap-mode: initial;
+  text-wrap-style: balance;
+  font-size: 1.625rem;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
 }
